@@ -1,24 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9DS-E8-Tmf">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--orange-->
+        <scene sceneID="uB0-py-Gda">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="hbX-Tc-BY4" customClass="ViewController" customModule="Tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a7p-dp-DUq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gz-cv-xZ0">
+                                <rect key="frame" x="6" y="264.5" width="308" height="39"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="20"/>
+                                <state key="normal" title="Изменить цвет контроллеров">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="orangeButtonPressed:" destination="hbX-Tc-BY4" eventType="touchUpInside" id="Xau-In-Ego"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1Gz-cv-xZ0" firstAttribute="centerX" secondItem="a7p-dp-DUq" secondAttribute="centerX" id="6U0-Rz-BiC"/>
+                            <constraint firstItem="1Gz-cv-xZ0" firstAttribute="centerY" secondItem="a7p-dp-DUq" secondAttribute="centerY" id="CwN-xV-y9B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Iq-1V-6qD"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="orange" id="UKu-lg-Sei">
+                        <color key="badgeColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="button" destination="1Gz-cv-xZ0" id="Kcp-aH-mIt"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CwP-LG-mgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-986" y="161"/>
+        </scene>
+        <!--red-->
+        <scene sceneID="VpO-tg-raD">
+            <objects>
+                <viewController id="WTL-2J-7DI" customClass="ViewController" customModule="Tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zyW-ef-1ep">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUB-Zx-e3E">
+                                <rect key="frame" x="6" y="264.5" width="308" height="39"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="20"/>
+                                <state key="normal" title="Изменить цвет контроллеров">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="redButtonPressed:" destination="WTL-2J-7DI" eventType="touchUpInside" id="0u9-rw-SvQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CUB-Zx-e3E" firstAttribute="centerX" secondItem="zyW-ef-1ep" secondAttribute="centerX" id="9pY-uk-xjx"/>
+                            <constraint firstItem="CUB-Zx-e3E" firstAttribute="centerY" secondItem="zyW-ef-1ep" secondAttribute="centerY" id="Zcf-nN-WYM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1I8-sJ-I1k"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="red" id="KnU-qe-JPb"/>
+                    <connections>
+                        <outlet property="button" destination="CUB-Zx-e3E" id="dod-5i-0l7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ip2-hj-Xmy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-986" y="-556"/>
+        </scene>
+        <!--cyan-->
+        <scene sceneID="D0q-cj-JTJ">
+            <objects>
+                <viewController id="fP0-Ow-c63" customClass="ViewController" customModule="Tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PTN-OV-nLp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bec-5x-sCJ">
+                                <rect key="frame" x="6" y="264.5" width="308" height="39"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="20"/>
+                                <state key="normal" title="Изменить цвет контроллеров">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cyanButtonPressed:" destination="fP0-Ow-c63" eventType="touchUpInside" id="7lC-hY-YPk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46260553799999998" green="1" blue="0.78682261229999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bec-5x-sCJ" firstAttribute="centerY" secondItem="PTN-OV-nLp" secondAttribute="centerY" id="NOa-Li-aJR"/>
+                            <constraint firstItem="Bec-5x-sCJ" firstAttribute="centerX" secondItem="PTN-OV-nLp" secondAttribute="centerX" id="UB5-0k-W6T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hmq-ss-poM"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="cyan" id="0B6-6F-PON">
+                        <color key="badgeColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="button" destination="Bec-5x-sCJ" id="hgz-dB-jW8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eg4-Qe-WKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858" y="162"/>
+        </scene>
+        <!--grey-->
+        <scene sceneID="H78-AE-Vkh">
+            <objects>
+                <viewController id="tf9-f3-0Ph" customClass="ViewController" customModule="Tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sqq-pJ-KFc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQj-DC-Xud">
+                                <rect key="frame" x="6" y="264.5" width="308" height="39"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="20"/>
+                                <state key="normal" title="Изменить цвет контроллеров">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="grayButtonPressed:" destination="tf9-f3-0Ph" eventType="touchUpInside" id="w8v-FA-pgY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <constraints>
+                            <constraint firstItem="zQj-DC-Xud" firstAttribute="centerY" secondItem="Sqq-pJ-KFc" secondAttribute="centerY" id="ieg-en-C0e"/>
+                            <constraint firstItem="zQj-DC-Xud" firstAttribute="centerX" secondItem="Sqq-pJ-KFc" secondAttribute="centerX" id="xXS-nt-TpV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0eO-09-D6F"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="grey" id="oXJ-yl-Lde"/>
+                    <connections>
+                        <outlet property="button" destination="zQj-DC-Xud" id="S0g-BE-dU4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mwe-eQ-ljb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858" y="-502"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Lf5-lv-F2l">
+            <objects>
+                <tabBarController id="9DS-E8-Tmf" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GSz-wX-xix">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tf9-f3-0Ph" kind="relationship" relationship="viewControllers" id="Ive-nT-1n9"/>
+                        <segue destination="fP0-Ow-c63" kind="relationship" relationship="viewControllers" id="pox-Fk-S7E"/>
+                        <segue destination="WTL-2J-7DI" kind="relationship" relationship="viewControllers" id="zXN-YP-ZOs"/>
+                        <segue destination="hbX-Tc-BY4" kind="relationship" relationship="viewControllers" id="6Tr-Gn-ITj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uPs-gn-Gwu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-94" y="-170"/>
         </scene>
     </scenes>
 </document>
